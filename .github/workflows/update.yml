@@ -24,6 +24,9 @@ jobs:
       - name: Abhängigkeiten installieren
         run: pip install -r requirements.txt
 
+      - name: Playwright-Browser installieren
+        run: playwright install --with-deps chromium
+
       - name: Scraper ausführen
         run: python scraper.py
 

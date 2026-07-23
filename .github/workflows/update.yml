@@ -14,12 +14,23 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - run: python update_calendar.py
+
+      - name: Python-Pakete installieren
+        run: pip install -r requirements.txt
+
+      - name: Chromium installieren
+        run: python -m playwright install --with-deps chromium
+
+      - name: Kalender aktualisieren
+        run: python update_calendar.py
+
       - name: Änderungen speichern
         run: |
           git config user.name "github-actions[bot]"

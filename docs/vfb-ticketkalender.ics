@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tobias Okos//VfB Ticketkalender//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VfB Ticketshop
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:vfb-everton-20260808@vfb-ticketkalender
+DTSTAMP:20260723T190000Z
+DTSTART;TZID=Europe/Berlin:20260808T170000
+DTEND;TZID=Europe/Berlin:20260808T190000
+SUMMARY:VfB-Spiel: VfB Stuttgart – Everton FC
+DESCRIPTION:Termin aus dem offiziellen VfB-Ticketshop.
+LOCATION:MHP Arena Stuttgart
+URL:https://tickets.vfb.de/shop?language=1&lpShortcutId=5&nextstate=2&shopid=103
+END:VEVENT
+BEGIN:VEVENT
+UID:vfb-koeln-20260904@vfb-ticketkalender
+DTSTAMP:20260723T190000Z
+DTSTART;TZID=Europe/Berlin:20260904T203000
+DTEND;TZID=Europe/Berlin:20260904T223000
+SUMMARY:VfB-Spiel: VfB Stuttgart – 1. FC Köln
+DESCRIPTION:Termin aus dem offiziellen VfB-Ticketshop.
+LOCATION:MHP Arena Stuttgart
+URL:https://tickets.vfb.de/shop?language=1&lpShortcutId=5&nextstate=2&shopid=103
+END:VEVENT
+BEGIN:VEVENT
+UID:vfb-dortmund-sale-20260730@vfb-ticketkalender
+DTSTAMP:20260723T190000Z
+DTSTART;TZID=Europe/Berlin:20260730T090000
+DTEND;TZID=Europe/Berlin:20260730T093000
+SUMMARY:VfB-Ticketverkauf: Borussia Dortmund
+DESCRIPTION:Mitgliederverkauf laut offiziellem VfB-Ticketshop. Frühzeitig einloggen.
+URL:https://tickets.vfb.de/shop?language=1&lpShortcutId=5&nextstate=2&shopid=103
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:VfB-Ticketverkauf beginnt in 30 Minuten
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vfb-dortmund-20260919@vfb-ticketkalender
+DTSTAMP:20260723T190000Z
+DTSTART;TZID=Europe/Berlin:20260919T183000
+DTEND;TZID=Europe/Berlin:20260919T203000
+SUMMARY:VfB-Spiel: VfB Stuttgart – Borussia Dortmund
+DESCRIPTION:Termin aus dem offiziellen VfB-Ticketshop.
+LOCATION:MHP Arena Stuttgart
+URL:https://tickets.vfb.de/shop?language=1&lpShortcutId=5&nextstate=2&shopid=103
+END:VEVENT
+END:VCALENDAR
